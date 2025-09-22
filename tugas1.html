@@ -15,7 +15,7 @@
        
             <!----EMAIL---->
         <tr><td><label for="email">Email</label></td>
-        <td><input type="text" id="email" name="email" required pattern="@" required placeholder="Masukkan Email" > </td></tr>
+        <td><input type="text" id="email" name="email" required pattern=".+@gmail\.com" required placeholder="Masukkan Email" > </td></tr>
        
             <!----TELEPON---->
         <tr><td><label for="telp">No. Telepon</label></td>
@@ -25,7 +25,7 @@
         <tr><td><label for="destinasi">Destinasi</label> </td>
         <td><select id="destinasi" name="destinasi" required>
             <option value="disabled selected">------Pilih Destinasi------</option>
-            <option>Padang</option>
+            <option required>Padang</option>
             <option>Aek Loba</option>
             <option>Pematangsiantar</option>
             <option>Prapat</option>
@@ -47,7 +47,7 @@
         
             <!----ARMADA---->
         <tr><td>Pilihan Armada</td>
-        <td><label><input type="radio" name="armada" value="hiace">Mobil Hiace</label><br>
+        <td><label><input type="radio" name="armada" value="hiace" required>Mobil Hiace</label><br>
         <label><input type="radio" name="armada" value="laksana">Bus Laksana</label></br>
         <label><input type="radio" name="armada" value="elf">ELF </label></td></tr>
         
@@ -59,7 +59,7 @@
         
             <!----IDENTITAS---->
         <tr><td><label for="ktp">Upload Identitas (KTP)</label></td>
-        <td><input id="ktp" name="ktp" type="file" accept=".pdf" required></td></tr>
+        <td><input id="ktp" name="ktp" type="file" accept=".pdf,.jpg,.jpeg,.png" required></td></tr>
         
             <!----BUTTOM---->
         <tr><td><button type="submit">Kirim Pesanan</button>
